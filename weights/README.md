@@ -22,10 +22,10 @@ Chạy script tự động quét và gom weights:
 python scripts/setup_weights.py
 ```
 
-### Cách 2: Tải thủ công từ đám mây
-1. Tải bộ trọng số mô hình từ kho lưu trữ chính thức:
-   - **Google Drive / Hugging Face:** `[Link download weights release]`
-2. Giải nén và đặt trực tiếp các file `.pt` vào thư mục này:
+### Cách 2: Tải thủ công từ đám mây / GitHub Releases
+1. Tải bộ trọng số mô hình từ kho lưu trữ:
+   - **GitHub Releases:** [https://github.com/Tuannll/fire-fall-detection-yolo/releases](https://github.com/Tuannll/fire-fall-detection-yolo/releases)
+2. Tải và đặt trực tiếp 3 file `.pt` vào thư mục này:
    ```
    weights/
    ├── .gitkeep
