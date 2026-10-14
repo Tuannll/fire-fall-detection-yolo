@@ -1,0 +1,26 @@
+pipeline:
+  seq_len: 30
+  fall_confirm: 12
+  cooldown_frames: 30
+  fall_threshold: 0.5
+  fire_conf: 0.45
+  fire_interval: 2
+  pose_conf: 0.3
+  imgsz: 640
+
+models:
+  fire_model: "weights/fire_best.pt"
+  pose_model: "weights/yolov8n-pose.pt"
+  lstm_model: "weights/fall_lstm_best.pt"
+
+telegram:
+  enabled: true
+  alert_interval: 10
+  token_env: "TELEGRAM_BOT_TOKEN"
+  chat_id_env: "TELEGRAM_CHAT_ID"
+  config_file: "configs/telegram_config.json"
+
+logging:
+  level: "INFO"
+  log_file: "logs/safety_monitor.log"
+  log_to_console: true

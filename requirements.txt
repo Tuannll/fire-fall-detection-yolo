@@ -1,0 +1,14 @@
+# Core Deep Learning & Vision
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.1.0
+opencv-python>=4.8.0
+numpy>=1.24.0,<2.0.0
+pillow>=9.5.0
+
+# Alerting & Networking
+requests>=2.28.0
+
+# Configuration & Utilities
+pyyaml>=6.0
+tqdm>=4.65.0

@@ -1,0 +1,7 @@
+path: /kaggle/input/datasets/nguynteincong/dataset-fall-fire/datasets/Fire_and_Smoke
+train: train/images
+val:   valid/images
+test:  test/images
+
+nc: 2
+names: ['fire', 'smoke']

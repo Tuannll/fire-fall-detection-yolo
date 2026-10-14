@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.git/
+.gitignore
+.dockerignore
+.vscode/
+.idea/
+.antigravitycli/
+logs/
+*.log
+*.jpg
+*.png
+Img/
+Label_auto/
+Thi_Giac_May_Tinh/
+Computer-Vision/
+fire-smoke-detect-yolov4/
+New folder/
+Source/New folder/
+.venv/
+env/
+venv/
+*.mp4
+*.avi
+*.mkv
+*.mov
+.env
+configs/telegram_config.json

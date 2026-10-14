@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  safety-monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai_safety_monitor
+    restart: unless-stopped
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID:-}
+    volumes:
+      - ./logs:/app/logs
+      - ./weights:/app/weights
+      - /dev/video0:/dev/video0 # map host webcam if available
+    devices:
+      - /dev/video0:/dev/video0
+    command: ["--source", "0", "--fire_interval", "2"]

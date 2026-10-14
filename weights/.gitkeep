@@ -1,0 +1,5 @@
+# Weights directory
+# Place model checkpoints here:
+# - fire_best.pt
+# - fall_lstm_best.pt
+# - yolov8n-pose.pt

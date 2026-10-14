@@ -1,0 +1,90 @@
+# =====================================================================
+# Git Ignore Configuration for AI Safety Monitor
+# =====================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Packaging
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# IDE & Editor files
+.vscode/
+.idea/
+.antigravitycli/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Heavy Datasets & Raw Image Dumps (36,000+ files)
+Img/
+Label_auto/
+Thi_Giac_May_Tinh/
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Sub-repositories / Cloned repos
+Computer-Vision/
+fire-smoke-detect-yolov4/
+
+# Model Checkpoints & Large Binary Weights
+*.pt
+*.pth
+*.onnx
+*.onnx.data
+*.bin
+*.engine
+# Keep placeholder in weights/
+!weights/.gitkeep
+
+# Temporary outputs, logs & alert snapshots
+logs/
+*.log
+fall_alert.jpg
+fire_alert.jpg
+alert_*.jpg
+temp_*.jpg
+
+# Ignore root-level PNG/JPG dumps but keep documentation assets
+*.png
+*.jpg
+*.jpeg
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.jpeg
+
+# Secrets, API Keys & Local Configurations
+.env
+.env.local
+telegram_config.json
+configs/telegram_config.json
+configs/telegram_config_local.json
+
+# Allow example config templates
+!.env.example
+!configs/telegram_config.example.json
+
+# Redundant duplicate directories
+New folder/
+Source/New folder/
+
+# School / Personal Documents & Internal Reports
+*.docx
+*.doc
+*.pptx
+*.ppt
+docs/*.docx
+docs/report.pdf
+docs/presentation_slides.pdf
